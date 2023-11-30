@@ -1,7 +1,10 @@
 #!/usr/bin/python3
+# SPDX-FileCoperightText: 2023 kota amaike
+# SPDX-License-Identifier: BSD-3-Clause
+
 import sys
 
-def tonums(s):
+def tonum(s):
     try:
         return int(s)
     except:
@@ -10,4 +13,5 @@ ans =0
 for line in sys.stdin:
     line = line.rstrip()
     ans += tonum(line) 
+
 print(ans)
